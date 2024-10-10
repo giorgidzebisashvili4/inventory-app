@@ -1,0 +1,17 @@
+<!-- views/index.ejs -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <ul>
+      <% if (locals.categories) {%> <% categories.forEach(function(category) {
+      %>
+      <li>Name: <%= category.name %></li>
+      <% }); %> <% } %>
+    </ul>
+    <!-- <a href="/create">Create a user</a> -->
+  </body>
+</html>
