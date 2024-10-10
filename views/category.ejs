@@ -7,8 +7,8 @@
   <body>
     <h1><%= title %></h1>
     <ul>
-      <% if (locals.users) {%> <% users.forEach(function(user) { %>
-      <li>ID: <%= user.id %>, Name: <%= user.username %></li>
+      <% if (locals.items) {%> <% items.map(function(item) { %>
+      <li><%= item.name %> - <%= item.price %></li>
       <% }); %> <% } %>
     </ul>
     <!-- <a href="/create">Create a user</a> -->

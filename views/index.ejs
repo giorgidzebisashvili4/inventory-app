@@ -9,7 +9,11 @@
     <ul>
       <% if (locals.categories) {%> <% categories.forEach(function(category) {
       %>
-      <li>Name: <%= category.name %></li>
+      <li>
+        <a href="/category/<%= category.id %>"
+          ><button><%= category.name %></button></a
+        >
+      </li>
       <% }); %> <% } %>
     </ul>
     <!-- <a href="/create">Create a user</a> -->
